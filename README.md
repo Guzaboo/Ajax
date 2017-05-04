@@ -9,5 +9,7 @@ To install, perform ```npm install``` in the same directory as SLAVE_1. Then, cr
 {
   "token": "YOURTOKENHERE",
   "master": "YOURUSERNAMEHERE"
-}```
+}
+```
+
 Change YOURTOKENHERE to a token from the (Discord developer site)[https://discordapp.com/developers] and YOURUSERNAMEHERE to the username you want to be provided with support.
