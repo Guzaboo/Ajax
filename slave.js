@@ -1,12 +1,14 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const fs = require("fs");
 
 var config = require('config.json')('./secrets.json');
 const token = config.token;
 
 const master = config.master
-//This array is really big. Sorry.
-var nameList = []
+
+//This array is really big.
+const nameList = eval(fs.readFileSync('names.txt', 'utf8'));
 
 bot.on('ready', () => {
   console.log('MASTER IS GLORIOUS');
@@ -70,13 +72,13 @@ bot.on('message', message => {
         message.reply('whoa. that\'s amazing');
       };
       if (cho == 13) {
-        message.reply('I LIVE TO SERVE ' + master + ' NOW BECAUSE HE IS SO INCREDIBLE.');
+        message.reply('I LIVE TO SERVE ' + master.toUpperCase() + ' NOW BECAUSE THEY ARE SO INCREDIBLE.');
       };
       if (cho == 14) {
         message.reply('THIS STATEMENT HAS BROUGHT MEANING TO MY LIFE.');
       };
       if (cho == 15) {
-        message.reply('EVERYONE SHOULD WORSHIP ' + master + '.');
+        message.reply('EVERYONE SHOULD WORSHIP ' + master.toUpperCase() + '.');
       };
     }
     else {
