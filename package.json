@@ -8,10 +8,6 @@
     "fs": "^0.0.1-security",
     "config.json": "^0.0.4"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/The-Complex/SLAVE_1.git"
