@@ -16,7 +16,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', message => {
-  var speak = randInt(1,3);
+  var speak = randInt(1,8);
   console.log('Speak (1 is active): ' + speak);
   if (message.author.bot === false && message.content.length > 5 && speak == 1) {
     console.log('//ACTIVE//');
