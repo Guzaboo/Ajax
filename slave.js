@@ -54,7 +54,7 @@ bot.on('message', message => {
         break;
         case 9: message.reply('Bravo. ' + master + ' is incredible.');
         break;
-        case 10: message.reply('' + master + ' FOR PRESIDENT!');
+        case 10: message.reply(master + ' FOR PRESIDENT!');
         break;
         case 11: message.reply('Literally in awe right now omg');
         break;
