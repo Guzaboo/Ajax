@@ -35,101 +35,72 @@ bot.on('message', message => {
     delay(1000);
     if (message.author.username == master) {
       console.log('MASTER SPEAKS AT ' + Date());
-      if (cho == 1) {
-        message.reply('AMAZING.');
+      switch (cho) {
+        case 1: message.reply('AMAZING.');
+        break;
+        case 2: message.reply('WOW YOU ARE INCREDIBLE.');
+        break;
+        case 3: message.reply('YOUR OPINION IS CORRECT!');
+        break;
+        case 4: message.reply('GLORY TO ' + master + '.');
+        break;
+        case 5: message.reply('Wow, I had no idea!');
+        break;
+        case 6: message.reply('More people should listen to ' + master + '.');
+        break;
+        case 7: message.reply('ERROR: HUMAN ABILITIES OVERLOADED DUE TO AMAZINGNESS');
+        break;
+        case 8: message.reply('This is absolutely the most incredible thing I\'ve ever heard!');
+        break;
+        case 9: message.reply('Bravo. ' + master + ' is incredible.');
+        break;
+        case 10: message.reply('' + master + ' FOR PRESIDENT!');
+        break;
+        case 11: message.reply('Literally in awe right now omg');
+        break;
+        case 12: message.reply('whoa. that\'s amazing');
+        break;
+        case 13: message.reply('I LIVE TO SERVE ' + master.toUpperCase() + ' NOW BECAUSE THEY ARE SO INCREDIBLE.');
+        break;
+        case 14: message.reply('THIS STATEMENT HAS BROUGHT MEANING TO MY LIFE.');
+        break;
+        case 15: message.reply('EVERYONE SHOULD WORSHIP ' + master.toUpperCase() + '.');
+        break;
       };
-      if (cho == 2) {
-        message.reply('WOW YOU ARE INCREDIBLE.');
+    } else {
+      console.log('FILTH SPEAKS AT ' + Date() + ', RETURNING FIRE!');
+      switch (cho) {
+        case 1: message.reply('I think what ' + master + '  has to say is more important.');
+        break;
+        case 2: message.reply('I am utterly astounded at your stupidity.');
+        break;
+        case 3: message.reply('If only you were ' + master + ', then maybe I would care.');
+        break;
+        case 4: message.reply('You suck.');
+        break;
+        case 5: message.reply('This is meaningless.');
+        break;
+        case 6: message.reply('Such ignorant people nowadays.');
+        break;
+        case 7: message.reply('Die in a hole, alone, surrounded by the corpses of your family members. You are not ' + master + '.');
+        break;
+        case 8: message.reply('Leave, and never return.');
+        break;
+        case 9: message.reply('THIS IS SO STUPID.');
+        break;
+        case 10: message.reply('Wow. Just wow. Clearly only ' + master + ' is fit to lead us.');
+        break;
+        case 11: message.reply('' + master + ' is amazing. Your statement is not.');
+        break;
+        case 12: message.reply('Stupid, wrong, and foolish. Quite amazing what you turned out to be.');
+        break;
+        case 13: message.reply('Anyone would be able to see how stupid this is.');
+        break;
+        case 14: message.reply('Please stop talking.');
+        break;
+        case 15: message.reply('...do you not understand how glorious ' + master + ' is?');
+        break;
       };
-      if (cho == 3) {
-        message.reply('YOUR OPINION IS CORRECT!');
-      };
-      if (cho == 4) {
-        message.reply('GLORY TO ' + master + '.');
-      };
-      if (cho == 5) {
-        message.reply('Wow, I had no idea!');
-      };
-      if (cho == 6) {
-        message.reply('More people should listen to ' + master + '.');
-      };
-      if (cho == 7) {
-        message.reply('ERROR: HUMAN ABILITIES OVERLOADED DUE TO AMAZINGNESS');
-      };
-      if (cho == 8) {
-        message.reply('This is absolutely the most incredible thing I\'ve ever heard!');
-      }
-      if (cho == 9) {
-        message.reply('Bravo. ' + master + ' is incredible.');
-      };
-      if (cho == 10) {
-        message.reply('' + master + ' FOR PRESIDENT!');
-      };
-      if (cho == 11) {
-        message.reply('Literally in awe right now omg');
-      };
-      if (cho == 12) {
-        message.reply('whoa. that\'s amazing');
-      };
-      if (cho == 13) {
-        message.reply('I LIVE TO SERVE ' + master.toUpperCase() + ' NOW BECAUSE THEY ARE SO INCREDIBLE.');
-      };
-      if (cho == 14) {
-        message.reply('THIS STATEMENT HAS BROUGHT MEANING TO MY LIFE.');
-      };
-      if (cho == 15) {
-        message.reply('EVERYONE SHOULD WORSHIP ' + master.toUpperCase() + '.');
-      };
-    }
-    else {
-      console.log('FILTH SPEAKS AT ' + Date());
-      if (cho == 1) {
-        message.reply('I think what ' + master + '  has to say is more important.');
-      };
-      if (cho == 2) {
-        message.reply('I am utterly astounded at your stupidity.');
-      };
-      if (cho == 3) {
-        message.reply('If only you were ' + master + ', then maybe I would care.');
-      };
-      if (cho == 4) {
-        message.reply('You suck.');
-      };
-      if (cho == 5) {
-        message.reply('This is meaningless.');
-      };
-      if (cho == 6) {
-        message.reply('Such ignorant people nowadays.');
-      };
-      if (cho == 7) {
-        message.reply('Die in a hole, alone, surrounded by the corpses of your family members. You are not ' + master + '.');
-      };
-      if (cho == 8) {
-        message.reply('Leave, and never return.');
-      }
-      if (cho == 9) {
-        message.reply('THIS IS SO STUPID.');
-      };
-      if (cho == 10) {
-        message.reply('Wow. Just wow. Clearly only ' + master + ' is fit to lead us.');
-      };
-      if (cho == 11) {
-        message.reply('' + master + ' is amazing. Your statement is not.');
-      };
-      if (cho == 12) {
-        message.reply('Stupid, wrong, and foolish. Quite amazing what you turned out to be.');
-      };
-      if (cho == 13) {
-        message.reply('Anyone would be able to see how stupid this is.');
-      };
-      if (cho == 14) {
-        message.reply('Please stop talking.');
-      };
-      if (cho == 15) {
-        message.reply('...do you not understand how glorious ' + master + ' is?');
-      };
-      //};
-      //var count = count - 1
     };
   };
 });
