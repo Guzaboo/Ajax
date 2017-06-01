@@ -23,8 +23,6 @@ bot.on('message', message => {
     console.log('Message From: ' + message.author);
     console.log(message.content);
     console.log("Channel: " + message.channel)
-    //var count = 5
-    //while (count !== 0) {
     var nameDec = randInt(0,17884);
     console.log("Chosen name #: " + nameDec)
     var newName = nameList[nameDec];
