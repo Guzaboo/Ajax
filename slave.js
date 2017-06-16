@@ -100,6 +100,8 @@ bot.on('message', message => {
         break;
       };
     };
+    delay(1000);
+    message.delete();
   };
 });
 
