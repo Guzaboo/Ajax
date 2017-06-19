@@ -19,7 +19,7 @@ bot.on('message', message => {
   var speak = randInt(1,8);
   console.log('Speak (1 is active): ' + speak);
   if (message.author.username == 'SLAVE_1') {
-    delay(1000);
+    delay(3000);
     message.delete();
   };
   if (message.author.bot === false && message.content.length > 5 && speak == 1) {
