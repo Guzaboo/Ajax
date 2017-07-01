@@ -1,8 +1,8 @@
 {
-  "name": "slave_1",
+  "name": "ajax",
   "version": "1.3.0",
-  "description": "Silences the fools, praises the wise.",
-  "main": "slave.js",
+  "description": "Does a lot. xD",
+  "main": "ajax.js",
   "dependencies": {
     "discord.js": "^11.1.0",
     "fs": "^0.0.1-security",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/The-Complex/SLAVE_1.git"
+    "url": "git+https://github.com/Guzaboo/Ajax.git"
   },
-  "author": "GLORIOUS, PERFECT LEADER WILLIAM",
+  "author": "Guzaboo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/The-Complex/SLAVE_1/issues"
+    "url": "https://github.com/Guzaboo/Ajax/issues"
   },
-  "homepage": "https://github.com/The-Complex/SLAVE_1#readme"
+  "homepage": "https://github.com/Guzaboo/Ajax#readme"
 }
