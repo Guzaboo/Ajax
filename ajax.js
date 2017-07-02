@@ -11,7 +11,6 @@ const nameList = eval(fs.readFileSync('names.txt', 'utf8'));
 var idList = [];
 var xpList = [];
 var timeList = [];
-var d = new Date();
 
 var tempid = eval(fs.readFileSync('id.txt', 'utf8'));
 for(var i=0; i < tempid.length; i++){
@@ -36,19 +35,29 @@ bot.on('message', message => {
         addUserXP(message.author.id, randInt(15,25));
         console.log("New user: User of id "+message.author.id+" now has "+xpList[xpList.length-1]+" XP!");
         console.log("idList.length = "+idList.length);
-        timeList[message.author.id] = d.getTime();
+        timeList[message.author.id] = getCurrentTime();
       } else {
         xpList[index] += randInt(15,25);
         writeFiles();
         console.log("User of id "+message.author.id+" now has "+xpList[index]+" XP!");
-        timeList[message.author.id] = d.getTime();
+        timeList[message.author.id] = getCurrentTime();
       }
     }
-  };
+    if(message.content == '!rank'){
+      var index = userExists(message.author.id)
+      sendMessage(message.author.username + " has " + xpList[index] + " XP!", message.channel);
+    }
+  }
 });
 
+function getCurrentTime(){
+  var d = new Date();
+  return d.getTime();
+}
+
 function getsXP(userid){
-  return (timeList[userid] == undefined) || (d.getTime() >= 60000 + timeList[userid]);
+  console.log("User last sent message "+ (getCurrentTime()-timeList[userid])/1000 +" seconds ago");
+  return (timeList[userid] == undefined) || (getCurrentTime() >= 60000 + timeList[userid]);
 }
 
 function addUserXP(addid, addxp){

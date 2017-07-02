@@ -1,19 +1,13 @@
-# SLAVE_1
+# Ajax
 
-SLAVE_1 is a bot which, if you are the master, compliments your messages. If someone else types a message, it insults their message, or at least reminds them to seek the master's guidance. In addition, it changes its name beforehand, to imitate the existence of a group of fans.
+Ajax is a bot that does many things. 
+1) He keeps track of participation of members of a server by giving them XP.
+2) He creates subscription roles so you can have announcements go out to only the groups subscribed to them.
 
 ## Installation
 
-To install, perform ```npm install``` in the same directory as SLAVE_1. Then, create a file that resembles the following named secrets.json in the same directory.
-```
-{
-  "token": "YOURTOKENHERE",
-  "master": "YOURUSERNAMEHERE"
-}
-```
-
-Change YOURTOKENHERE to a token from the [Discord developer site](https://discordapp.com/developers) and YOURUSERNAMEHERE to, well, your username.
+This is my bot. Don't steal my bot.
 
 ## Execution
 
-To execute, perform ```nodemon``` in the same directory as SLAVE_1.
+To execute, perform ```nodemon``` in the same directory as Ajax.
